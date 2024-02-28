@@ -1,0 +1,321 @@
+/* ============ blood pressure page design start here ============= */
+.section_logoWrapper {
+  width: 80px;
+  height: 80px;
+  background-color: rgba(29, 43, 95, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.bloodPressure_page .user_interfaceWrapper {
+  margin-bottom: 20px;
+}
+.bp_chartWrapperMain {
+  border-radius: 20px;
+  background-color: var(--white-clr);
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-right: 10px;
+  margin-bottom: 20px;
+  font-family: var(--primary-font);
+}
+.bp_averageResultsWrapper {
+  padding: 55px 0 112px 101px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.bp_resultDuration select {
+  background-color: rgba(50, 92, 244, 0.1);
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-family: var(--primary-font);
+  font-weight: var(--fw-bold);
+  color: var(--card-text-clr);
+  margin-bottom: 15px;
+}
+.average_bpWrapper {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  row-gap: 45px;
+}
+.average_bpWrapper::after {
+  position: absolute;
+  content: "";
+  width: 220px;
+  height: 1px;
+  background-color: rgba(29, 43, 95, 0.2);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -webkit-transform: translate(-50%, -50%);
+  -moz-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  -o-transform: translate(-50%, -50%);
+}
+.averageBp {
+  text-align: center;
+}
+.averageBpTitle {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: rgba(29, 43, 95, 0.5);
+  padding-bottom: 10px;
+}
+.averageBpResult {
+  font-weight: var(--fw-regular);
+  font-size: 80px;
+  color: var(--card-text-clr);
+}
+.bp_chartWrapper {
+  padding: 35px 58px;
+}
+.bp_cardDateWrapper {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: #818181;
+  text-align: end;
+  padding-bottom: 33px;
+}
+.bp_chart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.bpPage_CommonCard {
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  margin-bottom: 20px;
+}
+.bp_contentDetailsPartWrapper {
+  padding: 80px 140px;
+  background-color: rgba(255, 113, 94, 0.05);
+  margin-right: 20px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+.bp_contentDetailsTitle {
+  font-size: 24px;
+  font-weight: var(--fw-bold);
+  color: var(--card-text-clr);
+  padding-bottom: 20px;
+}
+.bpContent_btn.common_btn {
+  padding: 7px 28px;
+  font-size: 14px;
+  background-color: var(--btn-bg-dng);
+  margin-bottom: 20px;
+}
+.bp_contentDetails {
+  font-size: 16px;
+  font-weight: var(--fw-regular);
+  color: var(--card-text-clr);
+}
+.bp_contentDetails_highlighter {
+  font-weight: var(--fw-bold);
+  color: var(--btn-bg-dng);
+  text-transform: var(--text-uppercase);
+}
+.bp_contentDetails_highlighter:nth-child(2) {
+  color: var(--btn-bg-grn);
+}
+
+.suggest_videoCardWrapper {
+  background-color: var(--white-clr);
+  padding: 29px 26px 26px 26px;
+  margin-right: 20px;
+  font-family: var(--primary-font);
+}
+.suggest_title,
+.suggest_title a {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+}
+.suggest_title {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+  padding-bottom: 24px;
+}
+.suggest_slideIcon {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  column-gap: 7px;
+}
+.suggest_prevArrow,
+.suggest_nextArrow,
+.flowDiet_nextArrow,
+.flowDiet_prevArrow,
+.related_prevArrow,
+.related_nextArrow,
+.smallCardArrow {
+  width: 24px;
+  height: 24px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 43, 95, 0.2);
+  color: var(--white-clr);
+  font-size: 16px;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.related_prevArrow:hover,
+.related_nextArrow:hover,
+.suggest_prevArrow:hover,
+.suggest_nextArrow:hover,
+.flowDiet_prevArrow:hover,
+.flowDiet_nextArrow:hover,
+.smallCardArrow:hover {
+  background-color: var(--card-text-clr);
+  color: var(--white-clr);
+}
+.suggest_videoItem {
+  max-width: 267px;
+  max-height: 148px;
+  border-radius: 4px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  position: relative;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.suggest_overlay {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: linear-gradient(rgba(29, 43, 95, 0.05), rgba(29, 43, 95, 0.9));
+  padding: 15px;
+  display: flex;
+  column-gap: 9px;
+  align-items: end;
+  color: var(--white-clr);
+  font-family: var(--primary-font);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+  cursor: pointer;
+}
+.suggest_overlay a {
+  color: var(--white-clr);
+  font-size: 24px;
+}
+.suggest_overlayContent h3 {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+.suggest_overlayContent p {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+}
+.suggest_videoItem:hover .suggest_overlay {
+  top: 0;
+}
+.slick-dots {
+  display: flex !important;
+  justify-content: center;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+}
+.slick-dots li {
+  display: inline-block;
+  justify-content: center;
+  margin: 0 5px;
+}
+.slick-dots li button {
+  font-size: 0;
+  border: none;
+  width: 4px;
+  height: 4px;
+  border-radius: 50%;
+  background-color: #d9d9d9;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.slick-dots .slick-active button {
+  width: 6px;
+  height: 6px;
+  background-color: var(--card-text-clr);
+}
+.follow_diet .suggest_title {
+  padding-bottom: 5px;
+}
+.diet_details {
+  padding-bottom: 25px;
+  font-family: var(--primary-font);
+  font-size: 16px;
+  color: var(--card-text-clr);
+  font-weight: var(--fw-regular);
+}
+.followDiet_menu {
+  padding-top: 15px;
+  display: flex;
+  column-gap: 9px;
+  align-items: end;
+  color: var(--card-text-clr);
+  font-family: var(--primary-font);
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.followDiet_menu a {
+  color: var(--card-text-clr);
+  font-size: 25px;
+}
+.followDiet_menuContent h3 {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+}
+.followDiet_menuContent p {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+}
+.related_cardWrapper{
+  margin: 0;
+}
+
+/* ============ blood pressure page design end here ============= */

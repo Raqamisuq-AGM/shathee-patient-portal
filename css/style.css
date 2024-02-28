@@ -1,0 +1,732 @@
+/* ============== import area start here =================== */
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans:wdth,wght@62.5..100,100..900&display=swap");
+
+/* ============== import area end here =================== */
+/* ========= others pages css file =========== */
+@import url(../css/bloodPressure.css);
+@import url(../css/bloodSugar.css);
+@import url(../css/physicalMetal.css);
+/* ========= others pages css file =========== */
+/* ============ css variables ============= */
+:root {
+  /* === font family === */
+  --primary-font: "Noto Sans", sans-serif;
+  /* === font family === */
+  /* === font weight === */
+  --fw-light: 300;
+  --fw-regular: 400;
+  --fw-medium: 500;
+  --fw-semi-bold: 600;
+  --fw-bold: 700;
+  /* === font weight === */
+  /* === font size === */
+  --heading-font-size-1: 64px;
+  --heading-font-size-2: 48px;
+  --body-font-size: 24px;
+  --pera-font-size-1: 20px;
+  --pera-font-size-2: 16px;
+  --btn-font-size: 12px;
+  /* === font size === */
+  /* === colors === */
+  --white-clr: #fff;
+  --black-clr: #000;
+  --transparent-clr: transparent;
+  --theme-blue-clr: #f2f5ff;
+  --theme-blue-clr-2: #f4f7fe;
+  --primary-blue-clr: #325cf4;
+  --border-clr: rgba(50, 92, 244, 0.3);
+  --border-clr-2: #9747ff;
+  --secondary-blue-clr: #113bb3;
+  --tertiary-blue-clr: #113bb3;
+  --text-gray-clr: #3d3d3d;
+  --baseline-gray-clr: #d9d9d9;
+  --text-medium-clr: #6276b6;
+  --card-text-clr: #1d2b5f;
+  --btn-bg-grn: #05cd99;
+  --btn-bg-ylw: #fea200;
+  --btn-bg-dng: #ff725e;
+  /* === colors === */
+  /* === method === */
+  --transition: all 0.3s linear;
+  --text-uppercase: uppercase;
+  --text-capitalize: capitalize;
+  /* === method === */
+}
+/* ============ css variables ============= */
+
+/* ============= common css start here ================ */
+* {
+  margin: 0;
+  padding: 0;
+  outline: none;
+  box-sizing: border-box;
+}
+ul,
+ol,
+menu {
+  list-style-type: none;
+}
+a {
+  text-decoration: none;
+  display: inline-block;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+ul,
+ol,
+menu,
+div {
+  margin: 0;
+  padding: 0;
+}
+img {
+  vertical-align: middle;
+}
+body,
+html {
+  position: relative;
+  font-family: var(--primary-font);
+}
+main {
+  overflow: hidden;
+}
+.container {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+.common_btn {
+  font-family: var(--primary-font);
+  font-weight: var(--fw-bold);
+  font-size: var(--btn-font-size);
+  text-transform: var(--text-capitalize);
+  color: var(--white-clr);
+  background-color: var(--primary-blue-clr);
+  padding: 7px 10px;
+  border: 1px solid var(--transparent-clr);
+  cursor: pointer;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.common_btn:hover {
+  color: var(--black-clr);
+  background-color: var(--white-clr);
+  border: 1px solid var(--border-clr);
+}
+
+/* ============= common css end here ================ */
+
+/* ===========  dashboard page css start here ========== */
+#dashboard {
+  background-color: var(--theme-blue-clr-2);
+}
+.sidebar_wrapper {
+  background-color: var(--white-clr);
+  padding: 40px 100px 40px 38px;
+  
+}
+.brand_logo {
+  padding-bottom: 40px;
+}
+.navbar{
+  align-items: center;
+}
+.dashboard_navWrapper.navbar-collapse.collapse.show{
+  display: flex;
+  justify-content: start;
+  flex-direction: column;
+  
+}
+.dashboard_userWrapper {
+  padding: 30px 0;
+  display: flex;
+  align-items: center;
+  column-gap: 15px;
+  border-top: 1px solid var(--theme-blue-clr-2);
+  border-bottom: 1px solid var(--theme-blue-clr-2);
+}
+.user_imageWrapper {
+  max-width: 48px;
+  max-height: 48px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+}
+.user_detailsWrapper {
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.user_names {
+  font-size: var(--pera-font-size-2);
+  font-weight: var(--fw-bold);
+  color: #272927;
+  padding-left: 10px;
+  padding-bottom: 5px;
+}
+.user_lastLogin {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: #a3aed0;
+}
+.nav_menu {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+.nav-link {
+  padding: 10px;
+  font-family: var(--primary-font);
+  color: #a3aed0;
+  font-size: var(--pera-font-size-2);
+  font-weight: var(--fw-bold);
+  background-color: var(--transparent-clr);
+  display: flex;
+  align-items: center;
+  column-gap: 14px;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.nav_icon {
+  font-size: 20px;
+  display: flex;
+  align-items: center;
+}
+.nav_icon svg {
+  fill: #a3aed0;
+}
+.nav-link:hover {
+  color: var(--white-clr);
+  background-color: var(--primary-blue-clr);
+}
+.nav-link.active {
+  color: var(--white-clr);
+  background-color: var(--primary-blue-clr) !important;
+}
+.nav-link:hover .nav_icon {
+  color: var(--white-clr);
+}
+.nav-link.active .nav_icon {
+  color: var(--white-clr);
+}
+.nav-link.active .nav_icon svg {
+  fill: var(--white-clr);
+}
+.nav-link:hover .nav_icon svg {
+  fill: var(--white-clr);
+}
+.collapse_bar{
+  font-size: 18px;
+  color: var(--card-text-clr);
+  border: 1px solid var(--card-text-clr);
+  padding: 3px 7px;
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  outline: none;
+}
+.navbar-toggler:focus{
+  outline: none !important;
+  border: none !important;
+  box-shadow: none;
+}
+
+
+/* ==== right side design ====== */
+.main_dashboardWrapper {
+  padding: 40px 0;
+}
+.user_interfaceWrapper {
+  padding: 44px 48px 44px 48px;
+  background-color: #e0e9ff;
+  border-radius: 20px;
+  align-items: center;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.user_appointmentWrapper {
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.interface_commonDialog {
+  font-weight: var(--fw-regular);
+  font-size: var(--pera-font-size-2);
+  color: var(--text-medium-clr);
+  padding-bottom: 10px;
+}
+.interface_nameWrapper {
+  font-weight: var(--fw-bold);
+  font-size: 32px;
+  color: #1d2b5f;
+}
+.interface_name {
+  color: var(--primary-blue-clr);
+}
+.user_appointment {
+  font-weight: var(--fw-bold);
+  font-size: 18px;
+  color: var(--primary-blue-clr);
+  padding-bottom: 7px;
+}
+.user_appointmentDate {
+  padding-bottom: 6px;
+}
+.appointmentIcon {
+  padding-right: 9px;
+}
+.user_appointmentDate,
+.user_appointmentTime {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: #1d2b5f;
+}
+
+.feeling_cardWrapper {
+  padding: 40px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.feeling_heading {
+  font-weight: var(--fw-regular);
+  font-size: 24px;
+  color: #818181;
+  padding-bottom: 30px;
+}
+.feeling_item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 17px;
+  cursor: pointer;
+}
+.feeling_imageWrapper {
+  width: 63px;
+  height: 63px;
+  background-color: transparent;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: var(--transition);
+  -webkit-transition: var(--transition);
+  -moz-transition: var(--transition);
+  -ms-transition: var(--transition);
+  -o-transition: var(--transition);
+}
+.feeling_item:hover .feeling_imageWrapper {
+  background-color: #e0e9ff;
+}
+.feeling_image {
+  width: 52px;
+  height: 52px;
+  overflow: hidden;
+  object-fit: cover;
+  object-position: center;
+}
+.feeling_caption {
+  font-size: var(--pera-font-size-2);
+  font-weight: var(--fw-bold);
+  color: #1d2b5f;
+  position: relative;
+}
+.feeling_item:hover .feeling_caption::after {
+  position: absolute;
+  content: "";
+  width: 18px;
+  height: 1px;
+  background-color: #1d2b5f;
+  bottom: -10px;
+  left: 50%;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+}
+.bpPageSrc,
+.glucosePageSrc,
+.physicalPageSrc {
+  cursor: pointer;
+}
+.bp_cardWrapper {
+  padding: 31px 40px 17px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+}
+.bp_titleWrapper {
+  display: flex;
+  align-items: center;
+  column-gap: 22px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.bp_cardMeasurement {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: #1d2b5f;
+}
+.bp_cardHeading,
+.diastolic_bp {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: #1d2b5f;
+}
+.bp_logo {
+  width: 80px;
+  height: 80px;
+  border-radius: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(29, 43, 95, 0.1);
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  margin-bottom: 25px;
+}
+.bp_cardWrapper .common_btn {
+  padding: 7px 27px;
+  background-color: var(--btn-bg-dng);
+  margin-bottom: 10px;
+}
+.bp_graph {
+  width: 100%;
+  margin-bottom: 32px;
+}
+.last_measurement {
+  font-family: var(--primary-font);
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: #818181;
+}
+.healthScore_cardWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 66px 37px;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  text-align: center;
+  font-family: var(--primary-font);
+}
+.healthScore_title {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+  padding-bottom: 4px;
+}
+.healthScore_lastDate {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: #818181;
+  padding-bottom: 40px;
+}
+.healthScore_progressWrapper {
+  column-gap: 25px;
+}
+.healthScore_progressResult {
+  font-weight: var(--fw-regular);
+  font-size: 32px;
+  color: var(--card-text-clr);
+  padding-bottom: 7px;
+  padding-bottom: 40px;
+}
+.healthScore_progressResult h4 i {
+  font-size: 18px;
+}
+.healthScore_cardWrapper .common_btn {
+  padding: 7px 17px;
+  background-color: var(--btn-bg-grn);
+}
+.healthScore_details {
+  font-weight: var(--fw-regular);
+  color: var(--black-clr);
+  font-size: 16px;
+  padding: 0 30px;
+  padding-bottom: 30px;
+}
+.healthScore_itemWrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 12px;
+}
+.healthScore_item {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--card-text-clr);
+  position: relative;
+}
+.healthScore_item::before {
+  position: absolute;
+  content: "";
+  width: 12px;
+  height: 12px;
+  top: 50%;
+  left: -27px;
+  border-radius: 50%;
+  background-color: var(--btn-bg-dng);
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  -ms-border-radius: 50%;
+  -o-border-radius: 50%;
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  -o-transform: translateY(-50%);
+}
+.healthScore_item:nth-child(2)::before {
+  background-color: var(--btn-bg-ylw);
+}
+.bp_cardWrapper .common_btn {
+  margin-top: 13px;
+  padding: 7px 8px;
+  background-color: var(--btn-bg-ylw);
+}
+.others_healthCondition .common_btn {
+  margin-top: 13px;
+  padding: 7px 17px;
+  background-color: var(--btn-bg-grn);
+}
+
+.reportSelect {
+  display: flex;
+  flex-direction: column;
+  row-gap: 12px;
+}
+.test_select select {
+  width: 100%;
+  border: none;
+  text-align: center;
+  padding: 10px 65px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+
+.reportSelect input,
+.reportSelect input {
+  height: 44px;
+  padding: 10px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+}
+.reportSelect label {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: var(--card-text-clr);
+  padding-bottom: 6px;
+}
+
+.weight_cardWrapper {
+  padding: 27px 31px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: var(--white-clr);
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+}
+.weight_heading {
+  font-weight: var(--fw-bold);
+  font-size: 24px;
+  color: var(--card-text-clr);
+  padding-bottom: 13px;
+}
+.weight_detailsDate {
+  padding: 7px 10px;
+  background-color: rgba(50, 92, 244, 0.1);
+  border-radius: 4px;
+  color: var(--card-text-clr);
+  -webkit-border-radius: 4px;
+  -moz-border-radius: 4px;
+  -ms-border-radius: 4px;
+  -o-border-radius: 4px;
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+.weight_detailsDate i {
+  padding-right: 10px;
+  font-size: 15px;
+}
+.weight_detailsContentWrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  row-gap: 12px;
+  margin-bottom: 12px;
+}
+.weight_detailsItem {
+  max-width: 288px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 13px 10px 20px;
+  background-color: #f4f6ff;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.weight_date {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+.weight_result {
+  font-weight: var(--fw-bold);
+  font-size: 14px;
+  color: var(--card-text-clr);
+}
+.weight_feedback.common_btn {
+  padding: 7px 10px;
+  font-size: 14px;
+  background-color: var(--btn-bg-grn);
+}
+.weight_detailsItem:nth-child(1) {
+  background-color: unset;
+}
+.weight_detailsItem:nth-child(1) .weight_result {
+  font-weight: var(--fw-regular);
+}
+.weight_detailsItem:nth-child(2) .weight_feedback.common_btn {
+  background-color: var(--btn-bg-dng);
+  padding: 7px 18px;
+}
+.download_btn.download_btn {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  column-gap: 22px;
+  background-color: var(--card-text-clr);
+  padding: 16px 20px;
+  border-radius: 12px;
+  -webkit-border-radius: 12px;
+  -moz-border-radius: 12px;
+  -ms-border-radius: 12px;
+  -o-border-radius: 12px;
+}
+.download_btn.download_btn:hover {
+  color: var(--btn-bg-ylw);
+}
+.recipe_cardWrapper {
+  background-color: var(--white-clr);
+  padding: 22px 26px;
+  border-radius: 20px;
+  -webkit-border-radius: 20px;
+  -moz-border-radius: 20px;
+  -ms-border-radius: 20px;
+  -o-border-radius: 20px;
+  font-family: var(--primary-font);
+  text-transform: var(--text-capitalize);
+}
+.recipe_title {
+  font-weight: var(--fw-bold);
+  font-size: 32px;
+  color: var(--card-text-clr);
+}
+.recipe_date {
+  font-weight: var(--fw-regular);
+  font-size: 14px;
+  color: #a3aed0;
+  padding-bottom: 17px;
+}
+.recipe_routineWrapper {
+  display: flex;
+  flex-direction: column;
+  column-gap: 20px;
+  padding-bottom: 15px;
+}
+.recipe_routineItem {
+  display: flex;
+  align-items: center;
+  column-gap: 16px;
+}
+.recipe_playBtn {
+  color: var(--card-text-clr);
+  font-size: 30px;
+}
+.recipe_name {
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--card-text-clr);
+}
+.recipe_time {
+  font-weight: var(--fw-regular);
+  font-size: 12px;
+  color: var(#a3aed0);
+}
+.view_allRecipe {
+  text-align: end;
+  font-weight: var(--fw-bold);
+  font-size: 16px;
+  color: var(--primary-blue-clr);
+}
+
+/* ==== right side design ====== */
+
+/* ===========  dashboard page css end here ========== */

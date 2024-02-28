@@ -1,0 +1,880 @@
+.<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Shathee Medical</title>
+    <link rel="icon" href="../images/fav_icon.png" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+      integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link rel="stylesheet" href="../css/slick.css" />
+    <link rel="stylesheet" href="../css/style.css" />
+    <link rel="stylesheet" href="../css/responsive.css" />
+  </head>
+  <body>
+    <!-- =========== dashboard design start here ========== -->
+    <section id="dashboard" class="bloodPressure_page">
+      <div class="container-fluid p-0">
+        <div class="row g-0">
+          <!-- ===== left sidebar design ===== -->
+          <div class="col-lg-3 p-0">
+            <div
+              class="sidebar_wrapper navbar-expand-lg h-100 me-lg-3 navbar d-lg-flex"
+            >
+              <div class="brand_logo">
+                <a href="../index.html">
+                  <picture>
+                    <img
+                      src="../images/brand_logo.png"
+                      alt="../images/brand_logo.png"
+                      title="logo"
+                      class="img-fluid"
+                    />
+                  </picture>
+                </a>
+              </div>
+              <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+              >
+                <span class="collapse_bar">
+                  <i class="fa-solid fa-bars"></i>
+                </span>
+              </button>
+              <div
+                class="dashboard_navWrapper collapse navbar-collapse"
+                id="navbarNav"
+              >
+                <div class="sidebar_menuWrapper">
+                  <div class="dashboard_userWrapper">
+                    <div class="user_imageWrapper">
+                      <picture>
+                        <img
+                          src="../images/user_img-1.png"
+                          alt="../images/user_img-1.png"
+                          title="image"
+                          class="img-fluid"
+                        />
+                      </picture>
+                    </div>
+                    <div class="user_detailsWrapper">
+                      <h3 class="user_names">Sabrina Ritu</h3>
+                      <p class="user_lastLogin">
+                        Last Login:
+                        <span class="user_lastLoginDate">09 Aug, 2023</span>
+                      </p>
+                    </div>
+                  </div>
+                  <ul class="nav_menu nav-pills">
+                    <li class="nav-item">
+                      <a
+                        class="nav-link active"
+                        aria-current="page"
+                        href="../index.html"
+                      >
+                        <div class="nav_icon">
+                          <svg
+                            width="24"
+                            height="24"
+                            viewBox="0 0 24 24"
+                            fill=""
+                            xmlns="http://www.w3.org/2000/svg"
+                          >
+                            <g clip-path="url(#clip0_1913_8427)">
+                              <path
+                                d="M4 13H10C10.55 13 11 12.55 11 12V4C11 3.45 10.55 3 10 3H4C3.45 3 3 3.45 3 4V12C3 12.55 3.45 13 4 13ZM4 21H10C10.55 21 11 20.55 11 20V16C11 15.45 10.55 15 10 15H4C3.45 15 3 15.45 3 16V20C3 20.55 3.45 21 4 21ZM14 21H20C20.55 21 21 20.55 21 20V12C21 11.45 20.55 11 20 11H14C13.45 11 13 11.45 13 12V20C13 20.55 13.45 21 14 21ZM13 4V8C13 8.55 13.45 9 14 9H20C20.55 9 21 8.55 21 8V4C21 3.45 20.55 3 20 3H14C13.45 3 13 3.45 13 4Z"
+                                fill=""
+                              />
+                            </g>
+                            <defs>
+                              <clipPath id="clip0_1913_8427">
+                                <rect width="24" height="24" fill="" />
+                              </clipPath>
+                            </defs>
+                          </svg>
+                        </div>
+                        Dashboard
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="../pages/patient_report.html">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-arrow-trend-up"></i>
+                        </div>
+                        Reports
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-bell"></i>
+                        </div>
+                        Notifications
+                        <span class="badge rounded-pill bg-danger">4</span>
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a
+                        class="nav-link"
+                        href="../pages/upload_management.html"
+                      >
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-gear"></i>
+                        </div>
+                        Settings
+                      </a>
+                    </li>
+                    <li class="nav-item">
+                      <a class="nav-link" href="#">
+                        <div class="nav_icon">
+                          <i class="fa-solid fa-arrow-right-from-bracket"></i>
+                        </div>
+                        Log Out
+                      </a>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+          <!-- ===== left sidebar design ===== -->
+          <!-- ===== right side dashboard design ====== -->
+          <div class="col-lg-9 p-0">
+            <div class="main_dashboardWrapper px-lg-4">
+              <div class="row g-0">
+                <div class="col p-0">
+                  <div class="row g-0 user_interfaceWrapper">
+                    <div class="col-lg-10">
+                      <div class="user_interfaceNameMain">
+                        <p class="interface_commonDialog">Blood Pressure</p>
+                        <h2 class="interface_nameWrapper">
+                          Let’s have a look at your heart’s health,
+                          <span class="interface_name">Sabrina!</span>
+                        </h2>
+                      </div>
+                    </div>
+                    <div class="col-lg-2">
+                      <div class="section_logoWrapper">
+                        <picture>
+                          <img
+                            src="../images/bp_logo.png"
+                            alt="../images/bp_logo.png"
+                            title="bp logo"
+                            class="img-fluid"
+                          />
+                        </picture>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col p-0">
+                  <div class="bp_chartWrapperMain">
+                    <div class="row g-0 mw-100">
+                      <div class="col-lg-3 p-0">
+                        <div class="bp_averageResultsWrapper">
+                          <div class="bp_resultDuration">
+                            <select class="" name="" id="">
+                              <option value="Month">1 Month</option>
+                              <option value="Month">2 Month</option>
+                              <option value="Month">6 Month</option>
+                              <option value="Year">1 Year</option>
+                            </select>
+                          </div>
+                          <div class="average_bpWrapper">
+                            <div class="averageBp">
+                              <p class="averageBpTitle">Systolic mmHg</p>
+                              <h2 class="averageBpResult">160</h2>
+                            </div>
+                            <div class="averageBp">
+                              <p class="averageBpTitle">Diastolic mmHg</p>
+                              <h2 class="averageBpResult">90</h2>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-9 p-0">
+                        <div class="bp_chartWrapper">
+                          <div class="bp_cardDateWrapper">
+                            <p>
+                              Last update: <span class="bp_cardDate"></span>2
+                              days ago
+                            </p>
+                          </div>
+                          <div class="bp_chart">
+                            <picture>
+                              <img
+                                src="../images/bp_chart.png"
+                                alt="../images/bp_chart.png"
+                                title="bp cart"
+                                class="img-fluid"
+                              />
+                            </picture>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col-lg-8 p-0">
+                  <div class="row g-0">
+                    <div class="col-lg-12">
+                      <div
+                        class="bp_contentDetailsPartWrapper bpPage_CommonCard"
+                      >
+                        <h5 class="bp_contentDetailsTitle">
+                          Your blood pressure is
+                        </h5>
+                        <a href="#" class="bpContent_btn common_btn">High</a>
+                        <p class="bp_contentDetails">
+                          This is
+                          <span class="bp_contentDetails_highlighter"
+                            >HIGHER</span
+                          >
+                          than normal for your age, sex and weight, We can
+                          provide you with some guidance towards lowering your
+                          blood pressure. We work together to
+                          <span class="bp_contentDetails_highlighter"
+                            >IMPROVE</span
+                          >
+                          your health.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-0">
+                    <div class="col-lg-12">
+                      <div class="suggest_videoCardWrapper bpPage_CommonCard">
+                        <div class="row g-0">
+                          <div class="col-10">
+                            <h3 class="suggest_title">
+                              Suggested videos
+                              <a href="#"
+                                ><i class="fa-regular fa-circle-play"></i
+                              ></a>
+                            </h3>
+                          </div>
+                          <div class="col-2">
+                            <div class="suggest_slideIcon">
+                              <a href="#" class="suggest_prevArrow"
+                                ><i class="fa-solid fa-angle-left"></i
+                              ></a>
+                              <a href="#" class="suggest_nextArrow"
+                                ><i class="fa-solid fa-angle-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row g-0 suggest_slider">
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/suggest_image.png"
+                                  alt="../images/suggest_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                              <div class="suggest_overlay">
+                                <a href="#"
+                                  ><i class="fa-regular fa-circle-play"></i
+                                ></a>
+                                <div class="suggest_overlayContent">
+                                  <h3>Healthy Happy Life</h3>
+                                  <p>Dr. Tasnim Zara</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/suggest_image.png"
+                                  alt="../images/suggest_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                              <div class="suggest_overlay">
+                                <a href="#"
+                                  ><i class="fa-regular fa-circle-play"></i
+                                ></a>
+                                <div class="suggest_overlayContent">
+                                  <h3>Healthy Happy Life</h3>
+                                  <p>Dr. Tasnim Zara</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/suggest_image.png"
+                                  alt="../images/suggest_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                              <div class="suggest_overlay">
+                                <a href="#"
+                                  ><i class="fa-regular fa-circle-play"></i
+                                ></a>
+                                <div class="suggest_overlayContent">
+                                  <h3>Healthy Happy Life</h3>
+                                  <p>Dr. Tasnim Zara</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/suggest_image.png"
+                                  alt="../images/suggest_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                              <div class="suggest_overlay">
+                                <a href="#"
+                                  ><i class="fa-regular fa-circle-play"></i
+                                ></a>
+                                <div class="suggest_overlayContent">
+                                  <h3>Healthy Happy Life</h3>
+                                  <p>Dr. Tasnim Zara</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/suggest_image.png"
+                                  alt="../images/suggest_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                              <div class="suggest_overlay">
+                                <a href="#"
+                                  ><i class="fa-regular fa-circle-play"></i
+                                ></a>
+                                <div class="suggest_overlayContent">
+                                  <h3>Healthy Happy Life</h3>
+                                  <p>Dr. Tasnim Zara</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/suggest_image.png"
+                                  alt="../images/suggest_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                              <div class="suggest_overlay">
+                                <a href="#"
+                                  ><i class="fa-regular fa-circle-play"></i
+                                ></a>
+                                <div class="suggest_overlayContent">
+                                  <h3>Healthy Happy Life</h3>
+                                  <p>Dr. Tasnim Zara</p>
+                                </div>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-0">
+                    <div class="col-lg-12">
+                      <div
+                        class="suggest_videoCardWrapper bpPage_CommonCard follow_diet"
+                      >
+                        <div class="row g-0 g-0">
+                          <div class="col-10">
+                            <h3 class="suggest_title">
+                              Follow a balanced diet
+                              <span><i class="fa-solid fa-utensils"></i></span>
+                            </h3>
+                          </div>
+                          <div class="col-2">
+                            <div class="suggest_slideIcon">
+                              <a href="#" class="flowDiet_prevArrow"
+                                ><i class="fa-solid fa-angle-left"></i
+                              ></a>
+                              <a href="#" class="flowDiet_nextArrow"
+                                ><i class="fa-solid fa-angle-right"></i
+                              ></a>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="row g-0">
+                          <div class="col-lg-12">
+                            <p class="diet_details">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing
+                              elit, sed do eiusmod tempor incididunt ut labore
+                              et dolore magna aliqua. Ut enim ad minim veniam,
+                              quis nostrud exercitation ullamco
+                            </p>
+                          </div>
+                        </div>
+                        <div class="row g-0 follow_dietSlider">
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/followDiet_image.png"
+                                  alt="../images/followDiet_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                            </div>
+                            <div class="followDiet_menu">
+                              <a href="#"
+                                ><i class="fa-regular fa-circle-play"></i
+                              ></a>
+                              <div class="followDiet_menuContent">
+                                <h3>Italian Mariana</h3>
+                                <p>Breakfast</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/followDiet_image.png"
+                                  alt="../images/followDiet_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                            </div>
+                            <div class="followDiet_menu">
+                              <a href="#"
+                                ><i class="fa-regular fa-circle-play"></i
+                              ></a>
+                              <div class="followDiet_menuContent">
+                                <h3>Italian Mariana</h3>
+                                <p>Breakfast</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/followDiet_image.png"
+                                  alt="../images/followDiet_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                            </div>
+                            <div class="followDiet_menu">
+                              <a href="#"
+                                ><i class="fa-regular fa-circle-play"></i
+                              ></a>
+                              <div class="followDiet_menuContent">
+                                <h3>Italian Mariana</h3>
+                                <p>Breakfast</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/followDiet_image.png"
+                                  alt="../images/followDiet_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                            </div>
+                            <div class="followDiet_menu">
+                              <a href="#"
+                                ><i class="fa-regular fa-circle-play"></i
+                              ></a>
+                              <div class="followDiet_menuContent">
+                                <h3>Italian Mariana</h3>
+                                <p>Breakfast</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/followDiet_image.png"
+                                  alt="../images/followDiet_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                            </div>
+                            <div class="followDiet_menu">
+                              <a href="#"
+                                ><i class="fa-regular fa-circle-play"></i
+                              ></a>
+                              <div class="followDiet_menuContent">
+                                <h3>Italian Mariana</h3>
+                                <p>Breakfast</p>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="col-md-4">
+                            <div class="suggest_videoItem">
+                              <picture>
+                                <img
+                                  src="../images/followDiet_image.png"
+                                  alt="../images/followDiet_image.png"
+                                  title="video"
+                                  class="img-fluid"
+                                />
+                              </picture>
+                            </div>
+                            <div class="followDiet_menu">
+                              <a href="#"
+                                ><i class="fa-regular fa-circle-play"></i
+                              ></a>
+                              <div class="followDiet_menuContent">
+                                <h3>Italian Mariana</h3>
+                                <p>Breakfast</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-4 p-0">
+                  <div class="row g-0">
+                    <div class="col-lg p-0">
+                      <div class="weight_cardWrapper dashboard_cardItem">
+                        <h2 class="weight_heading">Past Results</h2>
+                        <p class="weight_detailsDate">
+                          <i class="fa-regular fa-calendar-days"></i>
+                          <span class="weight_detailsDateFrom">20-Aug </span>
+                          to
+                          <span class="weight_detailsDateto">24-Aug</span>
+                        </p>
+                        <div class="weight_detailsContentWrapper">
+                          <div class="weight_detailsItem">
+                            <p class="weight_date">Date</p>
+                            <p class="weight_result">Result</p>
+                            <p class="weight_feedback">Remarks</p>
+                          </div>
+                          <div class="weight_detailsItem">
+                            <p class="weight_date">24-07-23</p>
+                            <p class="weight_result">
+                              <span class="sys_report">160</span
+                              ><span class="dias_report">/90</span>
+                            </p>
+                            <a href="#" class="weight_feedback common_btn"
+                              >High</a
+                            >
+                          </div>
+                          <div class="weight_detailsItem">
+                            <p class="weight_date">10-07-23</p>
+                            <p class="weight_result">
+                              <span class="sys_report">130</span
+                              ><span class="dias_report">/85</span>
+                            </p>
+                            <a href="#" class="weight_feedback common_btn"
+                              >Normal</a
+                            >
+                          </div>
+                          <div class="weight_detailsItem">
+                            <p class="weight_date">10-07-23</p>
+                            <p class="weight_result">
+                              <span class="sys_report">130</span
+                              ><span class="dias_report">/80</span>
+                            </p>
+                            <a href="#" class="weight_feedback common_btn"
+                              >Normal</a
+                            >
+                          </div>
+                          <div class="weight_detailsItem">
+                            <p class="weight_date">03-07-23</p>
+                            <p class="weight_result">
+                              <span class="sys_report">125</span
+                              ><span class="dias_report">/75</span>
+                            </p>
+                            <a href="#" class="weight_feedback common_btn"
+                              >Normal</a
+                            >
+                          </div>
+                          <div class="weight_detailsItem">
+                            <p class="weight_date">03-07-23</p>
+                            <p class="weight_result">
+                              <span class="sys_report">125</span
+                              ><span class="dias_report">/75</span>
+                            </p>
+                            <a href="#" class="weight_feedback common_btn"
+                              >Normal</a
+                            >
+                          </div>
+                          <a href="#" class="download_btn common_btn">
+                            <i class="fa-solid fa-cloud-arrow-down"></i>
+                            Download BP Report</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="row g-0">
+                    <div class="col p-0">
+                      <div
+                        class="bp_cardWrapper dashboard_cardItem sugar_cardWrapper"
+                      >
+                        <div class="test_reportUpload">
+                          <form class="reportSelect">
+                            <div class="test_input">
+                              <label for="systolic">Systolic mmHg</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                name=""
+                                id="systolic"
+                                placeholder="180 mmHG"
+                              />
+                            </div>
+                            <div class="test_input">
+                              <label for="diastolic">Diastolic mmHg</label>
+                              <input
+                                class="form-control"
+                                type="text"
+                                name=""
+                                id="diastolic"
+                                placeholder="120 mmHG"
+                              />
+                            </div>
+                            <div class="test_date">
+                              <input
+                                type="text"
+                                class="form-control"
+                                onfocus="(this.type='date')"
+                                placeholder="Select Date"
+                              />
+                            </div>
+                          </form>
+                          <a href="#" class="download_btn common_btn">
+                            Submit</a
+                          >
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="row g-0">
+                <div class="col-lg-12 p-0">
+                  <div
+                    class="suggest_videoCardWrapper bpPage_CommonCard related_cardWrapper"
+                  >
+                    <div class="row g-0">
+                      <div class="col-10">
+                        <h3 class="suggest_title">
+                          Related Articles
+                          <span
+                            ><i class="fa-regular fa-rectangle-list"></i
+                          ></span>
+                        </h3>
+                      </div>
+                      <div class="col-2">
+                        <div class="suggest_slideIcon">
+                          <a href="#" class="related_prevArrow"
+                            ><i class="fa-solid fa-angle-left"></i
+                          ></a>
+                          <a href="#" class="related_nextArrow"
+                            ><i class="fa-solid fa-angle-right"></i
+                          ></a>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="row g-0 related_slider">
+                      <div class="col-md-4">
+                        <div class="suggest_videoItem">
+                          <picture>
+                            <img
+                              src="../images/related_image.png"
+                              alt="../images/related_image.png"
+                              title="video"
+                              class="img-fluid"
+                            />
+                          </picture>
+                          <div class="suggest_overlay">
+                            <a href="#"
+                              ><i class="fa-regular fa-circle-play"></i
+                            ></a>
+                            <div class="suggest_overlayContent">
+                              <h3>Healthy Happy Life</h3>
+                              <p>Dr. Tasnim Zara</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="suggest_videoItem">
+                          <picture>
+                            <img
+                              src="../images/related_image.png"
+                              alt="../images/related_image.png"
+                              title="video"
+                              class="img-fluid"
+                            />
+                          </picture>
+                          <div class="suggest_overlay">
+                            <a href="#"
+                              ><i class="fa-regular fa-circle-play"></i
+                            ></a>
+                            <div class="suggest_overlayContent">
+                              <h3>Healthy Happy Life</h3>
+                              <p>Dr. Tasnim Zara</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="suggest_videoItem">
+                          <picture>
+                            <img
+                              src="../images/related_image.png"
+                              alt="../images/related_image.png"
+                              title="video"
+                              class="img-fluid"
+                            />
+                          </picture>
+                          <div class="suggest_overlay">
+                            <a href="#"
+                              ><i class="fa-regular fa-circle-play"></i
+                            ></a>
+                            <div class="suggest_overlayContent">
+                              <h3>Healthy Happy Life</h3>
+                              <p>Dr. Tasnim Zara</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="suggest_videoItem">
+                          <picture>
+                            <img
+                              src="../images/related_image.png"
+                              alt="../images/related_image.png"
+                              title="video"
+                              class="img-fluid"
+                            />
+                          </picture>
+                          <div class="suggest_overlay">
+                            <a href="#"
+                              ><i class="fa-regular fa-circle-play"></i
+                            ></a>
+                            <div class="suggest_overlayContent">
+                              <h3>Healthy Happy Life</h3>
+                              <p>Dr. Tasnim Zara</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="suggest_videoItem">
+                          <picture>
+                            <img
+                              src="../images/related_image.png"
+                              alt="../images/related_image.png"
+                              title="video"
+                              class="img-fluid"
+                            />
+                          </picture>
+                          <div class="suggest_overlay">
+                            <a href="#"
+                              ><i class="fa-regular fa-circle-play"></i
+                            ></a>
+                            <div class="suggest_overlayContent">
+                              <h3>Healthy Happy Life</h3>
+                              <p>Dr. Tasnim Zara</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-md-4">
+                        <div class="suggest_videoItem">
+                          <picture>
+                            <img
+                              src="../images/related_image.png"
+                              alt="../images/related_image.png"
+                              title="video"
+                              class="img-fluid"
+                            />
+                          </picture>
+                          <div class="suggest_overlay">
+                            <a href="#"
+                              ><i class="fa-regular fa-circle-play"></i
+                            ></a>
+                            <div class="suggest_overlayContent">
+                              <h3>Healthy Happy Life</h3>
+                              <p>Dr. Tasnim Zara</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- ===== right side dashboard design ====== -->
+        </div>
+      </div>
+    </section>
+    <!-- =========== dashboard design end here ========== -->
+    <script
+      src="https://code.jquery.com/jquery-1.12.4.min.js"
+      integrity="sha256-ZosEbRLbNQzLpnKIkEdrPv7lOy9C27hHQ+Xp8a4MxAQ="
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/slick.min.js"></script>
+    <script src="../js/script.js"></script>
+  </body>
+</html>

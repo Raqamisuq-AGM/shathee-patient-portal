@@ -1,0 +1,562 @@
+/* ======== responsive css ======== */
+/* ========================= device (xs 0 > 576) ========================= */
+@media (max-width: 575.98px) {
+  .ingredients {
+    padding: 20px;
+  }
+  .main_row {
+    margin: 0 auto;
+  }
+  .brand_logo {
+    width: 160px;
+    padding-bottom: 10px;
+  }
+  .sidebar_wrapper {
+    padding: 20px 40px 40px;
+  }
+  .sidebar_menuWrapper {
+    width: 100%;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+  }
+  .nav_menu {
+    margin-top: 20px;
+    row-gap: 10px;
+  }
+  .nav-link {
+    padding-left: 50px;
+    width: auto;
+  }
+  .bp_cardWrapper {
+    margin-bottom: 20px;
+  }
+  .sugar_cardWrapper {
+    margin-bottom: 20px;
+  }
+  .healthScore_cardWrapper,
+  .feeling_cardWrapper,
+  .user_interfaceWrapper {
+    margin: 0 20px;
+  }
+  .healthScore_cardWrapper {
+    margin-bottom: 20px;
+  }
+  .recipe_cardWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0 20px;
+  }
+  .recipe_routineWrapper .view_allRecipe {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bp_contentDetailsPartWrapper.bpPage_CommonCard {
+    padding: 30px 20px;
+  }
+  .bp_cardWrapper.bp_graph_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .pAndM_toDoListWrapperMain {
+    margin: 0 20px;
+  }
+  .toDo_itemWrapper {
+    margin-bottom: 20px;
+  }
+  .averageSleep_cardWrapper {
+    margin: 0 20px 20px 20px;
+  }
+  .small_cardWrapper {
+    margin: 0 20px;
+  }
+  .suggest_prevArrow,
+  .suggest_nextArrow {
+    font-size: 10px;
+  }
+  .bp_averageResultsWrapper {
+    padding: 55px 0 30px 0;
+  }
+  .suggest_videoCardWrapper,
+  .bp_chartWrapperMain,
+  .bp_contentDetailsPartWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .suggest_title {
+    column-gap: 5px;
+    font-size: 14px;
+  }
+  .diet_details {
+    font-size: 12px;
+  }
+  .recipe_img {
+    height: auto;
+    width: auto;
+    padding: 0 10px;
+  }
+  .slider_btns a {
+    margin-bottom: 15px;
+  }
+  .single_recipe_today {
+    margin-bottom: 20px;
+  }
+  .slider_item.item {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .recipe_content {
+    padding: 22px;
+  }
+  .recipe_content h2 {
+    padding-top: 0px;
+    font-size: 20px;
+  }
+  .recipe_top_heading {
+    height: auto;
+    padding: 15px;
+    grid-template-columns: 1fr;
+  }
+  h2.section_header {
+    font-size: 20px;
+    margin-top: 15px;
+  }
+  .recipe_wrapper {
+    padding: 0;
+  }
+  .prescription.ingredients {
+    padding: 10px;
+  }
+  .navbar-collapse {
+    align-items: start;
+  }
+  .recipe_heading h2 {
+    font-size: 20px;
+  }
+  .goals.ingredients,
+  .patient_profile_content.ingredients {
+    padding: 20px 15px;
+  }
+  .recent_tests ul li,
+  .prescription_content ul li {
+    padding-left: 0px;
+  }
+  .medical_history_wrapper.ingredients,
+  .recent_tests.ingredients {
+    padding: 20px 10px;
+  }
+  .instructions {
+    padding: 20px;
+  }
+  .indredients_btns {
+    margin-left: 30px;
+  }
+  .test_results {
+    padding: 0;
+  }
+  .test_results table thead tr th,
+  .test_results table tbody tr td,
+  .test_results table tbody tr th {
+    font-size: 10px;
+  }
+  .test_results table i.color {
+    padding-left: 5px;
+  }
+  .feeling_cardWrapper {
+    padding: 40px 10px;
+  }
+  .feeling_item {
+    row-gap: 10px;
+    width: 40px;
+    height: 40px;
+  }
+  .feeling_caption{
+    font-size: 12px;
+  }
+  .feeling_heading{
+    font-size: 20px;
+    text-align: center;
+  }
+  .feeling_emoji_item{
+    display: flex;
+    justify-content: center;
+  }
+}
+/* ========================= device (xs 0 > 576) ========================= */
+
+/* ========================= device (sm 576 > 768) ========================= */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  .brand_logo {
+    width: 200px;
+    padding-bottom: 10px;
+  }
+  .sidebar_wrapper {
+    padding: 20px 40px 40px;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+  }
+  .sidebar_menuWrapper {
+    width: 100%;
+  }
+  .nav_menu {
+    margin-top: 20px;
+    row-gap: 10px;
+  }
+  .nav-link {
+    padding-left: 70px;
+  }
+  .user_interfaceWrapper {
+    margin: 0 20px;
+  }
+  .recipe_cardWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .recipe_routineWrapper a {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bp_cardWrapper {
+    margin-bottom: 20px;
+  }
+  .sugar_cardWrapper {
+    margin-bottom: 20px;
+  }
+  .feeling_cardWrapper,
+  .user_interfaceWrapper {
+    margin: 0 20px;
+  }
+  .healthScore_cardWrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .recipe_cardWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+    margin: 0 20px;
+  }
+  .recipe_routineWrapper a {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bp_contentDetailsPartWrapper.bpPage_CommonCard {
+    padding: 30px 20px;
+  }
+  .bp_cardWrapper.bp_graph_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.bp_graph_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .pAndM_toDoListWrapperMain {
+    margin: 0 20px;
+  }
+  .toDo_itemWrapper {
+    margin-bottom: 20px;
+  }
+  .averageSleep_cardWrapper {
+    margin: 0 20px 20px 20px;
+  }
+  .small_cardWrapper {
+    margin: 0 20px;
+  }
+  .bp_averageResultsWrapper {
+    padding: 55px 0 30px 0;
+  }
+  .suggest_videoCardWrapper,
+  .bp_chartWrapperMain,
+  .bp_contentDetailsPartWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .recipe_content h2 {
+    padding-top: 10px;
+    font-size: 20px;
+  }
+  .recipe_content {
+    padding: 20px;
+  }
+  .slider_item.item {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .single_recipe_today {
+    margin-bottom: 20px;
+  }
+  h2.section_header {
+    font-size: 22px;
+    margin-top: 20px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
+  }
+  .prescription.ingredients {
+    padding: 15px;
+  }
+  .navbar-collapse {
+    align-items: start;
+  }
+  .recipe_heading h2 {
+    font-size: 20px;
+  }
+  .goals.ingredients,
+  .patient_profile_content.ingredients {
+    padding: 20px 15px;
+  }
+  .recent_tests ul li,
+  .prescription_content ul li {
+    padding-left: 0px;
+  }
+  .medical_history_wrapper.ingredients,
+  .recent_tests.ingredients {
+    padding: 20px 10px;
+  }
+}
+/* ========================= device (sm 576 > 768) ========================= */
+
+/* ========================= device (md 768 > 992) ========================= */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .brand_logo {
+    width: 220px;
+    padding-bottom: 10px;
+  }
+  .sidebar_wrapper {
+    padding: 20px 40px 40px;
+  }
+  .sidebar_menuWrapper {
+    width: 100%;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+  }
+  .nav_menu {
+    margin-top: 20px;
+  }
+  .recipe_cardWrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .recipe_routineWrapper a {
+    margin-top: 20px;
+    text-align: center;
+  }
+  .bp_cardWrapper.sugar_cardWrapper,
+  .bp_graph_wrapper {
+    display: grid;
+    grid-template-columns: 1fr;
+    place-items: center;
+  }
+  .bp_graph {
+    text-align: center;
+  }
+  .weight_detailsItem {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .user_interfaceWrapper {
+    margin: 0 20px;
+  }
+  .bp_cardWrapper.bp_graph_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.bp_graph_wrapper {
+    margin: 0 25px;
+    margin-bottom: 20px;
+  }
+  .bp_cardWrapper.sugar_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .weight_cardWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .pAndM_toDoListWrapperMain {
+    margin: 0 20px;
+  }
+  .toDo_itemWrapper {
+    margin-bottom: 20px;
+  }
+  .averageSleep_cardWrapper {
+    margin: 0 20px 20px 20px;
+  }
+  .small_cardWrapper {
+    margin: 0 20px;
+  }
+  .bp_averageResultsWrapper {
+    padding: 55px 0 30px 0;
+  }
+  .suggest_videoCardWrapper,
+  .bp_chartWrapperMain,
+  .bp_contentDetailsPartWrapper {
+    margin: 0 20px;
+    margin-bottom: 20px;
+  }
+  .slider_item.item {
+    gap: 15px;
+    grid-template-columns: 1fr;
+  }
+  .recipe_content {
+    padding: 20px;
+  }
+  .recipe_content h2 {
+    padding-top: 0px;
+  }
+  .single_recipe_today {
+    margin-bottom: 20px;
+  }
+  h2.section_header {
+    margin-top: 25px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
+  }
+  .navbar-collapse {
+    align-items: start;
+  }
+}
+/* ========================= device (md 768 > 992) ========================= */
+
+/* ========================= device (lg 992 > 1200) ========================= */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  .sidebar_wrapper {
+    padding: 20px 10px 20px 10px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+    justify-content: start;
+  }
+  .sidebar_menuWrapper {
+    width: 100%;
+  }
+  .nav_menu {
+    margin-top: 20px;
+  }
+  .download_btn.common_btn {
+    padding: 7px;
+    font-size: 14px;
+  }
+  .sugar_cardWrapper {
+    padding: 10px;
+  }
+  .healthScore_details {
+    padding: 10px;
+    text-align: justify;
+  }
+  .healthScore_cardWrapper {
+    padding: 20px;
+  }
+  .weight_detailsItem {
+    flex-direction: column;
+    row-gap: 10px;
+  }
+  .small_cardWrapper.small_insightCardWrapper {
+    padding: 20px 10px;
+  }
+  .suggest_videoCardWrapper.bpPage_CommonCard.related_cardWrapper {
+    margin-top: 20px;
+  }
+  .slider_item.item {
+    gap: 15px;
+  }
+  .recipe_content {
+    padding: 20px;
+  }
+  .recipe_wrapper {
+    padding: 25px;
+  }
+  .navbar-collapse {
+    align-items: start;
+  }
+}
+/* ========================= device (lg 992 > 1200) ========================= */
+
+/* ========================= device (xl 1200 > 1400) ========================= */
+@media (min-width: 1200px) and (max-width: 1400px) {
+  .sidebar_wrapper {
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
+  }
+  .dashboard_userWrapper {
+    padding: 10px 0px;
+  }
+  .nav_menu {
+    margin-top: 20px;
+  }
+  .download_btn.common_btn {
+    padding: 7px;
+    font-size: 12px;
+  }
+  .navbar-collapse {
+    align-items: start;
+  }
+}
+/* ========================= device (xl 1200 > 1400) ========================= */
+/* ========================= device (xxl 1400 >>) ========================= */
+@media (min-width: 1400px) {
+  .navbar-collapse {
+    align-items: start;
+  }
+  .sidebar_wrapper {
+    padding: 40px 20px 40px 20px;
+    display: flex;
+    flex-direction: column;
+  }
+  .navbar {
+    align-items: start;
+  }
+}
+
+/* ========================= device (xxl 1400 >>) ========================= */
+/* ======== responsive css ======== */
+
+/* ===== design by AJOY SAHA ===== */
